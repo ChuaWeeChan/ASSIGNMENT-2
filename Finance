@@ -1,0 +1,63 @@
+
+public class Finance extends Counsellor{ //2.1 INHERITANCE
+	private double counsellingFees, counsellorSalary, rentalFees, grossProfit, operatingProfit;
+
+	//2.3 setter getter
+	public void setcounsellingFees (double counsellingFees) {
+		this.counsellingFees = counsellingFees;
+	}
+
+	public void setcounsellorSalary (double counsellorSalary) {
+		this.counsellorSalary = counsellorSalary;
+	}
+
+	public void setrentalFees (double rentalFees) {
+		this.rentalFees = rentalFees;
+	}
+
+	public double getcounsellingFees() {
+		return counsellingFees;
+	}
+
+	public double getcounsellorSalary() {
+		return counsellorSalary;
+	}
+
+	public double getrentalFees() {
+		return rentalFees;
+	}
+
+	public Finance(String cn, String ca, String cp, String name, int ID, String position, String contact, double salary) {
+
+		super(cn, ca, cp, name, ID, position, contact, salary);
+	
+	}
+
+	public String toString() {
+
+		displayFinancialStatement();
+		return null;
+	}
+
+	public void displayFinancialStatement() {
+	
+		//2.5 interface
+		Payment sp = new counselingPayment();
+		double Welson = 3600;
+		double Jimmy = 3500;
+		double Gary = 1500;
+		double Johnny = 1500;
+		double totalSalary = sp.getSalary(Welson, Jimmy, Gary, Johnny);
+		System.out.println("Total salary for Welson, Jimmy, Gary and Johnny : RM" + (Welson+Jimmy+Gary+Johnny));
+
+		double counsellingFees = 19000;
+		double rentalFees = 2000;
+		
+		System.out.println("\nTotal Income(Counselling Fees)\t\t: RM" + counsellingFees
+				+"\nTotal Counsellor Salary\t\t\t: RM" + totalSalary
+				+"\nTotal Operating Expenses(Rental Fees)\t: RM" + rentalFees
+				+"\nTotal Gross Profit\t\t\t: RM" + (counsellingFees - totalSalary)
+				+"\nTotal Operating Profit\t\t\t: RM" + (counsellingFees - totalSalary - rentalFees));
+	}
+
+}
