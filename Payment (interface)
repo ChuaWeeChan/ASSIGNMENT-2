@@ -1,0 +1,6 @@
+
+public interface Payment {
+
+	double getPayment(int visitTime);
+	double getSalary(double Welson, double Jimmy, double Gary, double Johnny);
+}
