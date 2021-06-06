@@ -1,0 +1,14 @@
+
+class counselingPayment implements Payment {
+
+	public double getPayment(int visitTime) {
+		int price = 300;
+		double totalPayment = price*visitTime;
+		return totalPayment;
+	}
+
+	public double getSalary(double Welson, double Jimmy, double Gary, double Johnny) {
+		double totalSalary = Welson+Jimmy+Gary+Johnny;
+		return totalSalary;
+	}
+}
