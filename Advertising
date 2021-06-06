@@ -1,0 +1,60 @@
+
+public class Advertising {
+
+	private int discountVoucher;
+	private String facebook;
+	private String instagram;
+	private int counsellingFees;
+
+	//2.3 setter getter
+	public void setdiscountVoucher (int discountVoucher) {
+		this.discountVoucher = discountVoucher;
+	}
+
+	public void setfacebook (String facebook) {
+		this.facebook = facebook;
+	}
+
+	public void setinstagram (String instagram) {
+		this.instagram = instagram;
+	}
+
+	public void setcounsellingFees (int counsellingFees) {
+		this.counsellingFees = counsellingFees;
+	}
+
+	public int getdiscountVoucher() {
+		return discountVoucher;
+	}
+
+	public String getfacebook() {
+		return facebook;
+	}
+
+	public String getinstagram() {
+		return instagram;
+	}
+
+	public int getcounsellingFees() {
+		return counsellingFees;
+	}
+
+	public Advertising(String fb, String ig, int cf, int dv) {
+
+		this.facebook = fb;
+		this.instagram = ig;
+		this.counsellingFees = cf;
+		this.discountVoucher = dv;
+
+		System.out.println("\nCAREER COUNSELLING AVAILABLE !!!");
+		System.out.println("DON'T KNOW WHAT THE JOB THAT SUITABLE FOR YOU ???");
+		System.out.println("\nFIND US THROUGH OUR SOCIAL MEDIA !!!");
+		System.out.println("FACEBOOK\t: " + facebook);
+		System.out.println("INSTAGRAM\t: " + instagram);
+		System.out.println("Counselling Fees per Visit: RM" + counsellingFees + " (Discount will be available for more than 5 class!)");
+		System.out.println("\nFOR THE FIRST 100 CUSTOMERS WILL GET CASH VOUCHER WORTH RM" + discountVoucher + "!!!");
+
+	}
+
+}
+
