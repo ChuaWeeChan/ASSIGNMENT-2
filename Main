@@ -1,0 +1,52 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+
+		System.out.println("==============================");
+		System.out.println("Counseling Center Information");
+		System.out.println("==============================");
+		CounselingCenter cc = new CounselingCenter("MINDWORK PSYCHOLOGICAL & COUNSELING CENTER", 
+				"Unit 317 Block A Lobby 5, Lebuhraya SPRINT, Damansara Intan, 47400 Petaling Jaya, Selangor", "016-6351616");
+
+		System.out.println("\n============");
+		System.out.println("Advertising");
+		System.out.println("============");
+		Advertising adv = new Advertising("MINDWORK PSYCHOLOGICAL & COUNSELING CENTER", "MINDWORK.SINCE.2021", 300, 50);
+
+		System.out.println("\n=================");
+		System.out.println("COUNSELLOR LIST");
+		System.out.println("=================");
+		Counsellor csl[] = new Counsellor[4]; //create an array to store object.
+		csl[0] = new Counsellor("MINDWORK PSYCHOLOGICAL & COUNSELING CENTER", 
+				"Unit 317 Block A Lobby 5, Lebuhraya SPRINT, Damansara Intan, 47400 Petaling Jaya, Selangor", "016-6351616", "Welson Chua", 271948, "Senior Counsellor", "016-6351616", 3600);
+		csl[1] = new Counsellor("MINDWORK PSYCHOLOGICAL & COUNSELING CENTER", 
+				"Unit 317 Block A Lobby 5, Lebuhraya SPRINT, Damansara Intan, 47400 Petaling Jaya, Selangor", "016-6351616", "Jimmy Choo", 271949, "Senior Counsellor", "016-3797605", 3500);
+		csl[2] = new Counsellor("MINDWORK PSYCHOLOGICAL & COUNSELING CENTER", 
+				"Unit 317 Block A Lobby 5, Lebuhraya SPRINT, Damansara Intan, 47400 Petaling Jaya, Selangor", "016-6351616", "Gary Ng", 271950, "Junior Counsellor", "016-2746819", 1500);
+		csl[3] = new Counsellor("MINDWORK PSYCHOLOGICAL & COUNSELING CENTER", 
+				"Unit 317 Block A Lobby 5, Lebuhraya SPRINT, Damansara Intan, 47400 Petaling Jaya, Selangor", "016-6351616", "Johnny Xu", 271951, "Junior Counsellor", "016-8981881", 1500);
+		for(int i = 0; i<csl.length; i++) {
+			csl[i].toString();
+
+		}
+
+		System.out.println("=================");
+		System.out.println("CUSTOMER RECORD");
+		System.out.println("=================");
+		Customer ctm = new Customer();
+
+		System.out.println("\n\n=============================");
+		System.out.println("COUNSELLOR DETAIL AND SALARY");
+		System.out.println("=============================");
+
+		Finance fin = new Finance("MINDWORK PSYCHOLOGICAL & COUNSELING CENTER", "Unit 317 Block A Lobby 5, Lebuhraya SPRINT, Damansara Intan, 47400 Petaling Jaya, Selangor", "016-6351616", "Welson Chua", 271948, "Senior Counsellor", "016-6351616", 3600);
+		Finance fin2 = new Finance("MINDWORK PSYCHOLOGICAL & COUNSELING CENTER", "Unit 317 Block A Lobby 5, Lebuhraya SPRINT, Damansara Intan, 47400 Petaling Jaya, Selangor", "016-6351616", "Jimmy Choo", 271949, "Senior Counsellor", "016-3797605", 3500);
+		Finance fin3 = new Finance("MINDWORK PSYCHOLOGICAL & COUNSELING CENTER", "Unit 317 Block A Lobby 5, Lebuhraya SPRINT, Damansara Intan, 47400 Petaling Jaya, Selangor", "016-6351616", "Gary Ng", 271950, "Junior Counsellor", "016-2746819", 1500);
+		Finance fin4 = new Finance("MINDWORK PSYCHOLOGICAL & COUNSELING CENTER", "Unit 317 Block A Lobby 5, Lebuhraya SPRINT, Damansara Intan, 47400 Petaling Jaya, Selangor", "016-6351616", "Johnny Xu", 271951, "Junior Counsellor", "016-8981881", 1500);
+		System.out.println("=================================");
+		System.out.println("FINANCIAL STATEMENT OF THE MONTH");
+		System.out.println("=================================");
+		System.out.println(fin);
+		
+	}
+}//end of Main.
