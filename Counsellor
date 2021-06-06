@@ -1,0 +1,67 @@
+
+public class Counsellor extends CounselingCenter{ //2.1 INHERITANCE
+
+	private String counsellorName, counsellorContact, counsellorPosition;
+	private int counsellorID;
+	private double counsellorSalary;
+
+	//2.3 setter getter
+	public void setName(String counsellorName) {
+		this.counsellorName = counsellorName;
+	}
+
+	public void setID(int counsellorID) {
+		this.counsellorID = counsellorID;
+	}
+
+	public void setPosition(String counsellorPosition) {
+		this.counsellorPosition = counsellorPosition;
+	}
+
+	public void setContact(String counsellorContact) {
+		this.counsellorContact = counsellorContact;
+	}
+
+	public void setSalary(double counsellorSalary) {
+		this.counsellorSalary = counsellorSalary;
+	}
+
+	public String getName() {
+		return counsellorName;
+	}
+	
+	public int getID() {
+		return counsellorID;
+	}
+	
+	public String getPosition() {
+		return counsellorPosition;
+	}
+	
+	public String getContact() {
+		return counsellorContact;
+	}
+	
+	public double getSalary() {
+		return counsellorSalary;
+	}
+	
+	public Counsellor(String cn, String ca, String cp, String name, int ID, String position, String contact, double salary) {
+		super(cn, ca, cp);
+		counsellorName = name;
+		counsellorID = ID;
+		counsellorPosition = position;
+		counsellorContact = contact;
+		counsellorSalary = salary;
+
+		System.out.println("Counsellor Name\t\t: "+this.counsellorName);
+		System.out.println("Counsellor ID\t\t: "+this.counsellorID);
+		System.out.println("Counsellor Position\t: "+this.counsellorPosition);
+		System.out.println("Counsellor Contact\t: "+this.counsellorContact);
+		System.out.println("Counsellor Salary\t: RM"+this.counsellorSalary+"\n");
+	}
+
+}//End of counsellor
+
+
+
